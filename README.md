@@ -9,7 +9,6 @@
 改数量 · 换横竖 · 调 Shift · 点一下就生效
 
 [![License: GPL v3+](https://img.shields.io/badge/License-GPLv3%2B-blue.svg)](LICENSE)
-[![Tests](https://github.com/seldoms/rime-settings/actions/workflows/tests.yml/badge.svg)](https://github.com/seldoms/rime-settings/actions/workflows/tests.yml)
 ![Desktop](https://img.shields.io/badge/Desktop-GTK_4_%2B_libadwaita-orange)
 
 [🪄 让 Agent 帮我装](INSTALL_WITH_AGENT.md) · [🚀 自己动手](#-自己装也很快) · [📸 看图说话](#-长这样原生窗口看着就舒服)
@@ -146,7 +145,8 @@ cd rime-settings
 /usr/bin/python3 check_gui.py
 ```
 
-`check_gui.py` 需要实际图形会话和已运行的 IBus-Rime，会短暂重新部署。CI 只运行隔离测试。
+`check_gui.py` 需要实际图形会话和已运行的 IBus-Rime，会短暂重新部署。
+需要 GitHub Actions 时，可将 [工作流示例](docs/tests-workflow.example.yml) 放到 `.github/workflows/tests.yml`，自动运行隔离测试；上传工作流需要相应 GitHub 权限。
 
 ```text
 settings.py             界面、配置备份和 Rime 部署

@@ -1,3 +1,4 @@
+# Optional: place this file at .github/workflows/tests.yml to enable GitHub Actions.
 name: Configuration tests
 on: [push, pull_request]
 permissions:
